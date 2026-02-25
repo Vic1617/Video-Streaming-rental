@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Video Rental Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-red-700 py-6 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-4xl font-bold tracking-tight text-white">🎬 VideoRent</h1>
+            <p class="text-red-200 mt-1">Browse and rent your favourite movies</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-700">Available for Rent</h2>
+
+        <!-- Video Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div th:each="video : ${videos}"
+                 class="bg-white rounded-2xl p-6 shadow-md hover:shadow-red-400/40 hover:scale-105 transition-transform duration-200 border border-gray-200">
+
+                <img th:src="${video.imageUrl}" 
+     alt="Movie Poster"
+     class="rounded-xl h-48 w-full object-cover mb-4">
+
+                <h3 class="text-xl font-bold text-gray-900 mb-1" th:text="${video.name}">Movie Name</h3>
+
+                <span class="inline-block bg-red-700 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3"
+                      th:text="${video.genre}">Genre</span>
+
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-green-600 font-bold text-lg"
+                          th:text="'$' + ${video.rentalPrice}">$0.00</span>
+                    <button class="bg-red-600 hover:bg-red-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors duration-150">
+                        Rent Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center text-gray-400 py-8 mt-10 text-sm border-t border-gray-200">
+        &copy; 2026 VideoRent. All rights reserved.
+    </footer>
+
+</body>
+</html>

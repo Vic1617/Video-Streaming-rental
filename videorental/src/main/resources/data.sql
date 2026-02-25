@@ -1,0 +1,5 @@
+INSERT INTO video (name, genre, rental_price, image_url) VALUES ('Inception', 'Sci-Fi', 3.99, 'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX400_.jpg');
+INSERT INTO video (name, genre, rental_price, image_url) VALUES ('The Dark Knight', 'Action', 2.99, 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX400_.jpg');
+INSERT INTO video (name, genre, rental_price, image_url) VALUES ('Interstellar', 'Sci-Fi', 4.49, 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX400_.jpg');
+INSERT INTO video (name, genre, rental_price, image_url) VALUES ('The Godfather', 'Drama', 1.99, 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX400_.jpg');
+INSERT INTO video (name, genre, rental_price, image_url) VALUES ('Avengers Endgame', 'Action', 3.49, 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX400_.jpg');
